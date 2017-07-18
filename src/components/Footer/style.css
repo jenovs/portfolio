@@ -1,0 +1,18 @@
+.footer {
+  box-shadow: 0 -1px 1px 1px var(--main-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  height: 5rem;
+  text-align: center;
+}
+
+.fa {
+  transition: filter 0.3s;
+}
+
+.fa:hover {
+  filter: opacity(80%);
+}
