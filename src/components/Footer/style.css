@@ -14,5 +14,9 @@
 }
 
 .fa:hover {
-  filter: opacity(80%);
+  filter: opacity(85%);
+}
+
+.fa-twitter {
+  color: var(--color-twitter-blue);
 }
