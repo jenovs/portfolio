@@ -1,7 +1,7 @@
 :root {
   --nav-bar-color: white;
-  /*--main-color: #6495ED;*/
-  --main-color: #f4f2e9;
+  --color-main: #f4f2e9;
+  /*--color-main: #6495ED;*/
 
   --main-font-color: #333;
   --color-twitter-blue: #1DA1F2;

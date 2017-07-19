@@ -4,8 +4,86 @@
   min-height: 100vh;
 }
 
-.app-body {
+.app__body {
+  text-align: left;
   flex: 1 0 auto;
-  font-size: 5rem;
   margin: auto;
+  padding: 1rem;
+  padding-top: 5vh;
+  width: 100%;
+  max-width: 960px;
+}
+
+.app__body  h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.app__main-title {
+  font-size: 4rem;
+  font-family: monospace;
+  margin-bottom: 0.5rem;
+}
+
+.app__social {
+  font-size: 1.2rem;
+  font-family: monospace;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.app__social a {
+  font-weight: 700;
+  opacity: 1;
+  transition: color 0.15s;
+}
+
+.app__social a:hover {
+  font-weight: 700;
+  color: var(--color-twitter-blue);
+}
+
+.app__projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.app__project {
+  box-shadow: 0 0 1px gray;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.app__project strong {
+  font-weight: 700;
+}
+
+.app__project a:hover {
+  color: var(--color-twitter-blue);
+}
+
+.app__about-me {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.app__about-me p {
+  padding-left: 1rem;
+}
+
+.app__about-me strong {
+  font-weight: 700;
+}
+
+@media (min-width: 400px) {
+  .app__body {
+    padding-top: 20vh;
+  }
+  .app__project {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    box-shadow: none;
+  }
 }
