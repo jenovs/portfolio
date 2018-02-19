@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="build/styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <title>Viktors Jenovs</title>
 </head>
 
 <body>
+  <!-- CREEP -->
   <div class="creep">
     <div class="eyes-wrapper">
       <div class="eye">
@@ -20,17 +23,77 @@
     </div>
     <div class="mouth"></div>
   </div>
-  <div class="message-wrapper">
-    <div class="greeting">
-      <p>Hello!</p>
-      <p>Nice to see you here 😎</p>
+  <!-- END OF CREEP -->
+  <div class="wrapper">
+    <div class="hero__resume">
+      <p><a href="CV_Viktors_Jenovs.pdf" download>Download CV/Resume</a></p>
     </div>
-    <div class="text">
-      <p>I'm currently rewriting this page so come back later.</p>
-      <p>Meanwhile you can visit my <a class="link" href="https://github.com/jenovs" target="_blank">GitHub</a> and <a class="link" href="https://twitter.com/jviktors" target="_blank">Twitter</a>.</p>
+    <section class="hero">
+      <div class="hero__welcome-text">
+        <h1>&lt;Viktors_Jenovs&nbsp;/&gt;</h1>
+        <p class="hero__subtitle">Software developer</p>
+        <p class="hero__intro">Front&#8209;end developer (<span>HTML</span>/<span>CSS</span>, <span>JavaScript</span>, <span>React</span>) who also knows his way around back&#8209;end (my projects use some <span>Node.js</span>, a little <span>Go</span> and are hosted on <span>AWS</span>          EC2).</p>
+      </div>
+      <div class="hero__scroll-text">
+        <p>Scroll down to see my projects</p>
+        <div class="down-arrow"></div>
+      </div>
+    </section>
+    <section class="projects">
+      <h2>Projects</h2>
+      <article class="project">
+        <h3 class="project__title">Spotify Clone</h3>
+        <div class="project__screenshot">
+          <img src="images/spotify-clone-1.png" alt="Spotify">
+        </div>
+        <div class="project__description">
+          <p>Clone of Spotify's web client (work-in-progress). Uses free-tier API with limited functionality - songs are limited to 30 second preview and some songs don't have preview at all.</p>
+          <p><span>Technologies used:</span> React, Redux, SCSS, styled-components.</p>
+          <p>Just like original, my clone doesn't work on mobile :)</p>
+          <p>I started this project in May 2017 to practice my React skills, but left unfinished. In February 2018 I decided to finally finish it and it's my current working project.</p>
+        </div>
+        <div class="project__links">
+          <a href="https://spotify-clone.jenovs.com" target="_blank">Live demo</a>
+          <a href="https://github.com/jenovs/spotify-clone" target="_blank">Code on GitHub</a>
+        </div>
+      </article>
+      <article class="project">
+        <h3 class="project__title">Speedrun Challenge</h3>
+        <div class="project__screenshot">
+          <img class="dark-border" src="images/speedrun.png" alt="Speedrun">
+        </div>
+        <div class="project__description">
+          <p>This project was done as a part of a <a class="project__description-link" href="https://github.com/P1xt/chingu-fcc-speedrun-challenge" target="_blank">Speedrun Challenge</a> I did in early 2017.</p>
+          <p><span>Technologies used:</span> React, SCSS.</p>
+          <p>The main objective of the Speedrun was (obviously) speed, but I managed to squeez in some TDD (e.g. Calculator project was completely written using TDD approach).</p>
+          <p>Also this was my first attempt to interate D3 into React projects.</p>
+          <p>Each project is accompanied with a short Medium post.</p>
+        </div>
+        <div class="project__links">
+          <a href="https://fcc-speedrun.jenovs.com/" target="_blank">Live demo</a>
+          <a href="https://github.com/jenovs/fcc-speedrun-phase2" target="_blank">Code on GitHub</a>
+        </div>
+      </article>
+      <div class="project__post-scriptum">You can see more of my code on <a href="https://github.com/jenovs" target="_blank">GitHub</a></div>
+    </section>
+    <div class="about">
+      <h2>About me</h2>
+      <p>I'm an electronics technician turned software developer from Latvia, and I've been learning software development since mid-2016, mostly focusing on front-end, but I'm also familiar with Node.js and some Go. Also dabbled with Solidity.
+      </p>
+      <p>&nbsp;</p>
+      <p>In summer I like to ride my MTB and go hiking (<a href="https://spectator.sme.sk/c/20028720/in-the-footsteps-of-the-heroes-of-the-uprising.html" target="_blank">SNP Trail</a> is on my bucket list).</p>
+      <p>&nbsp;</p>
+      <p>Periodically I post something insightful (not really) on <a href="https://twitter.com/jviktors" target="_blank">Twitter</a> and do some coding challenges on <a href="https://www.codewars.com/users/jenovs" target="_blank">Codewars</a>.</p>
     </div>
+    <footer>
+      <div class="footer__links-wrapper">
+        <a class="footer__link" href="https://github.com/jenovs" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a class="footer__link" href="https://twitter.com/jviktors" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a class="footer__link" href="https://www.linkedin.com/in/viktors-j-068713133/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
   </div>
-  <script src="main.js">
+  <script src="build/script.js">
   </script>
 </body>
 

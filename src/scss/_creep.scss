@@ -1,16 +1,19 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  height: 100vh;
-  font-family: sans-serif;
-}
-
 .creep {
+  position: fixed;
   width: 100px;
+}
+
+.dot {
+  margin-top: 18px;
+  margin-left: 13px;
+  position: relative;
+  background-color: #333;
+  border-radius: 50%;
+  top: -4px;
+  left: -3px;
+  width: 8px;
+  height: 8px;
+  transition: all 0.1s linear;
 }
 
 .eyes-wrapper {
@@ -32,19 +35,6 @@ body {
   height: 36px;
 }
 
-.dot {
-  margin-top: 18px;
-  margin-left: 13px;
-  position: relative;
-  background-color: #333;
-  border-radius: 50%;
-  top: -4px;
-  left: -3px;
-  width: 8px;
-  height: 8px;
-  transition: all 0.1s linear;
-}
-
 .mouth {
   border-bottom: 5px solid transparent;
   border-radius: 25%;
@@ -59,19 +49,8 @@ body {
   border-radius: 50%;
 }
 
-.message-wrapper {
-  margin: 2rem 1rem;
-}
-
-.greeting {
-  margin-bottom: 2rem;
-}
-
-.greeting {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.text {
-  font-size: 18px;
+@media (max-width: 768px) {
+  .creep {
+    display: none;
+  }
 }

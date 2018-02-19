@@ -1,0 +1,18 @@
+a,
+body,
+div,
+html,
+span {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
