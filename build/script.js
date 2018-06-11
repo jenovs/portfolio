@@ -76,18 +76,6 @@ __webpack_require__(2);
 
 console.log('¯\\_(ツ)_/¯');
 
-var wrapper = document.querySelector('.wrapper');
-var hero = document.querySelector('.hero');
-var cv = document.querySelector('.hero__resume');
-
-var cvOffset = hero.offsetHeight - cv.offsetTop;
-
-var handleScroll = function handleScroll(e) {
-  var scrolled = hero.getBoundingClientRect().bottom - cvOffset;
-};
-
-window.addEventListener('scroll', handleScroll);
-
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
