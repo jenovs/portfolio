@@ -31,6 +31,59 @@ a:active {
     .about > p a {
       color: blue; }
 
+.assignments {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  padding-bottom: 2rem;
+  width: 100%; }
+  .assignments > h3 {
+    margin-bottom: 1rem; }
+  .assignments > p {
+    box-shadow: 0 1px #ddd;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem; }
+
+.assignment {
+  align-items: center;
+  box-shadow: 0 1px #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  transition: background-color 0.15s; }
+  .assignment .btn {
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 1rem;
+    padding: 0.4rem 1rem; }
+  .assignment .live {
+    background: #3498db;
+    background-image: linear-gradient(to bottom, #3498db, #2980b9); }
+    .assignment .live:hover {
+      background: #3cb0fd;
+      background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }
+  .assignment .source {
+    background: #9ba3a8;
+    background-image: linear-gradient(to bottom, #9ba3a8, #57656e); }
+    .assignment .source:hover {
+      background: #a6adb1;
+      background-image: linear-gradient(to bottom, #a6adb1, #606f79); }
+  .assignment .requirements {
+    color: blue;
+    padding: 0 1rem;
+    text-decoration: underline; }
+  .assignment:hover {
+    background-color: #eee; }
+
+.assignment-title {
+  flex: 1;
+  text-align: left; }
+
+@media (min-width: 768px) {
+  .assignment {
+    flex-direction: row;
+    justify-content: space-between; } }
+
 .creep {
   position: fixed;
   width: 100px; }
