@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "copy": "mkdir dist -p && cp index.html ./dist/index.html",
+    "copy": "mkdir dist -p && cp index.html ./dist/index.html && cp ./assets -r ./dist",
     "test": "exit 0",
     "start": "webpack -w"
   },
