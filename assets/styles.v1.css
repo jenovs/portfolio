@@ -85,6 +85,7 @@ a:active {
     justify-content: space-between; } }
 
 .creep {
+  display: none;
   position: fixed;
   width: 100px; }
 
