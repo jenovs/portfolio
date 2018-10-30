@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '8'
+notifications:
+  email: false
+before_deploy: npm run copy
+deploy:
+  provider: s3
+  bucket: jenovs.com
+  skip_cleanup: true
+  access_key_id: AKIAITQH2RUIE6TZUZBQ
+  local_dir: dist
+  secret_access_key:
+    secure: R22HrByoIvxXXZuchSsBYFsJxaxI0BrKARWwuUAyiWkEPz6AeFmePPIrwSXo6w/FI/6iPGvZ+av73eUlnnj5Mq1Sjy+nxJ1uI0zS3o2/eSlsDmMDedqQlpbZZKwjuNt5e0Ja1kHBdyDc9YAwg4+VJm5Cd5JcYVAQ5DQb+63PMV+y2WwhA+thqZ93JHqkWNUlFYFrKHV3HwP3/KvKw5l1eVb+nDw0odEOFdx3WPSxa2NrCwf6eVL/Kw2FbU8N8vAMRiHKiYfA4U+QkayvAZZ4HVAAFZGHz0aha3blMnQX10qKlncYcmfP9b8nRvmRL6E8XScXkCt4iadjzFHyAySHROtl174aKLQgetBGgoGmCT0/HlKC2uWfoNBBqILYIzytGPrVMWgwjRAgSRSmlEqpA2Z8QVhx1Igp6/g1vH8AALmY5VsWBm1H9GAa/Jt6uXjcjKdLuk1LLq1IInEhTASZZExaKfLLiXbPQ344bYhKsCGtbvyVi5LtfkZFnyVU9EEHwFP5mWAH7mYl/RfdznmFEjmP+0WKOOo5NpTQfxFQmbEygXHOyIARasC//bETqglnZLon6jonqf3l03OWI7RXwDL+RpwZ00kExGnSOtFAHLNLGtktJAUL5Te9Tplzr6HewRlr4yz8uJia3T4pmtwbXa48yr9M47ETlW+PhMUd7pI=
