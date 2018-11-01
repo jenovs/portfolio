@@ -1,12 +1,14 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/index.js',
 
   output: {
     filename: 'script.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
   },
 
   module: {
@@ -18,17 +20,27 @@ module.exports = {
       },
       {
         test: /.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader'],
-        }),
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.(jpg|png)$/,
-        loader: 'url-loader',
+        loader: 'file-loader',
       },
     ],
   },
 
-  plugins: [new ExtractTextPlugin('styles.css')],
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new MiniCssExtractPlugin({ filename: 'styles.css' }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: 'index.html',
+    }),
+  ],
 };
