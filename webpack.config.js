@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/index.js',
 
   output: {
-    filename: 'script.js',
+    filename: 'script.[hash:6].js',
     path: path.resolve(__dirname, 'dist'),
   },
 
@@ -37,7 +37,7 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new MiniCssExtractPlugin({ filename: 'styles.css' }),
+    new MiniCssExtractPlugin({ filename: 'styles.[hash:6].css' }),
     new HtmlWebpackPlugin({
       template: 'index.html',
     }),
