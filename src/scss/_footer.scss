@@ -4,7 +4,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 100px;
+  padding: 5px;
 
   .footer__links-wrapper {
     display: flex;
@@ -12,9 +12,15 @@ footer {
     width: 50%;
 
     .footer__link {
+      text-align: center;
       color: white;
-      font-size: 3rem;
+      font-size: 1.75rem;
       font-weight: bold;
     }
   }
+}
+
+.social-text {
+  display: block;
+  font-size: 1rem;
 }

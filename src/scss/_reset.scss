@@ -1,7 +1,10 @@
 a,
+article,
 body,
 div,
 html,
+nav,
+section,
 span {
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +16,6 @@ a:hover,
 a:visited,
 a:focus,
 a:active {
-  color: #000;
+  color: #333;
   text-decoration: none;
 }

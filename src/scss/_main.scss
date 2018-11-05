@@ -5,6 +5,7 @@
 }
 
 body {
+  color: #333;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   height: 100vh;
@@ -13,5 +14,8 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  padding-top: 4rem;
   transition: all 1s linear;
+  width: 100%;
 }
