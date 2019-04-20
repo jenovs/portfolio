@@ -1,132 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Software developer. I know some React, Redux, JavaScript/TypeScript and Node."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css"
+      integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css"
+      integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT"
+      crossorigin="anonymous"
+    />
+    <title>Viktors Jenovs</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Software developer. I know some React, Redux, JavaScript/TypeScript and Node.">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT"
-    crossorigin="anonymous">
-  <title>Viktors Jenovs</title>
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo-container">
-      <div class="logo">
-        <div class="cell"></div>
-        <div class="cell big-v">V</div>
-        <div class="cell iktors">iktors</div>
-        <div class="cell jeno">Jeno</div>
-        <div class="cell last">s</div>
-      </div>
-    </div>
-  </nav>
-  <!-- NAVBAR END -->
-
-
-  <div class="wrapper">
-    <section class="projects">
-      <h2>Sample Projects</h2>
-
-      <!-- PROJECT 1 -->
-      <article class="project-card">
-        <a href="https://sc.jenovs.com" target="_blank" rel="noopener">
-          <h3>Spotify Clone</h3>
-        </a>
-        <div class="badges">
-          <a href="https://travis-ci.org/jenovs/spotify-clone">
-            <img src="https://travis-ci.org/jenovs/spotify-clone.svg?branch=development" alt="Travis badge">
-          </a>
-          <a href="https://codecov.io/gh/jenovs/spotify-clone">
-            <img src="https://codecov.io/gh/jenovs/spotify-clone/branch/development/graph/badge.svg" alt="Codecov badge" />
-          </a>
-        </div>
-        <div class="project__description">
-          <p class="project__description-text">Clone of Spotify's web client (still work-in-progress). Uses free-tier
-            API
-            with limited functionality - songs
-            are limited to 30 second preview and some songs may not have preview at all.</p>
-          <p class="project__description-text">Just like the original, my clone doesn't work on mobile :)</p>
-          <p class="project__tech"><strong>Technologies used:</strong> React, Redux,
-            styled-components, JavaScript/TypeScript, Travis (CI/CD), AWS S3 (hosting).</p>
-          </p>
-        </div>
-        <div class="project__links">
-          <a class="project__link--live" href="https://sc.jenovs.com" target="_blank" rel="noopener">Live
-            demo</a>
-          <a class="project__link--code" href="https://github.com/jenovs/spotify-clone" target="_blank" rel="noopener">Source
-            code <i class="fab fa-github"></i></a>
-        </div>
-      </article>
-      <!-- PROJECT 1 END -->
-
-      <!-- PROJECT 2 -->
-      <article class="project-card">
-        <a href="https://jenovs.github.io/react-serp/" target="_blank" rel="noopener">
-          <h3>Search Enginge Results Page (SERP)</h3>
-        </a>
-        <div class="badges">
-          <!-- BADGES -->
-        </div>
-        <div class="project__description">
-          <p class="project__description-text">Display the search results fetched from an API.</p>
-          <p class="project__description-text">Check the full <a href="https://github.com/jenovs/react-serp/tree/master/requirements" target="_blank" rel="noopener"><strong>requirements</strong></a>.</p>
-          <p class="project__tech"><strong>Technologies used:</strong> React, styled-components, GitHub Pages
-            (hosting).</p>
-          </p>
-        </div>
-        <div class="project__links">
-          <a class="project__link--live" href="https://jenovs.github.io/react-serp/" target="_blank" rel="noopener">Live
-            demo</a>
-          <a class="project__link--code" href="https://github.com/jenovs/react-serp" target="_blank" rel="noopener">Source
-            code <i class="fab fa-github"></i></a>
-        </div>
-      </article>
-      <!-- PROJECT 2 END -->
-
-      <article class="project-card">
-        <a href="https://fcc-speedrun.jenovs.com/" target="_blank" rel="noopener">
-          <h3>Speedrun Challenge</h3>
-        </a>
-        <div class="badges">
-          <!-- BADGES -->
-        </div>
-        <div class="project__description">
-          <p class="project__description-text">This project was done as a part of a <a class="project__description-link"
-              href="https://github.com/P1xt/chingu-fcc-speedrun-challenge" target="_blank" rel="noopener"><strong>Speedrun
-                Challenge</strong></a> I did a while ago.</p>
-          <p class="project__tech"><strong>Technologies used:</strong> React, SCSS, AWS EC2 (hosting).</p>
-          <p class="project__description-text">The main objective of the Speedrun was (obviously) speed, but I managed
-            to squeez in some TDD (e.g.
-            Calculator project was completely written using TDD approach).</p>
-          <p class="project__description-text">Also this was my first attempt to use D3 in a React project.</p>
-          <p class="project__description-text">Each project is accompanied with a short Medium post.</p>
-          <div class="project__links">
-            <a class="project__link--live" href="https://fcc-speedrun.jenovs.com/" target="_blank" rel="noopener">Live demo</a>
-            <a class="project__link--code" href="https://github.com/jenovs/fcc-speedrun-phase2" target="_blank" rel="noopener">Source
-              code <i class="fab fa-github"></i></a>
-          </div>
-      </article>
-
-      <div class="project__ps">You can see more of my code on <a href="https://github.com/jenovs" target="_blank" rel="noopener">GitHub</a></div>
-    </section>
-
-    <footer>
-      <div class="footer__links-wrapper">
-        <a class="footer__link" href="https://github.com/jenovs" target="_blank" rel="noopener"><i class="fab fa-github"></i><span
-            class="social-text">GitHub</span></a>
-        <a class="footer__link" href="https://twitter.com/jviktors" target="_blank" rel="noopener"><i class="fab fa-twitter"></i><span
-            class="social-text">Twitter</span></a>
-        <a class="footer__link" href="https://www.linkedin.com/in/viktors-jenovs-068713133/" target="_blank" rel="noopener"><i
-            class="fab fa-linkedin-in"></i><span class="social-text">LinkedIn</span></a>
-      </div>
-    </footer>
-  </div>
-</body>
-
+  <body>
+    <div id="app"></div>
+  </body>
 </html>
